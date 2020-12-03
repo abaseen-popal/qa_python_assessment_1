@@ -260,7 +260,17 @@ def eight(input):
 	# Take a look at the documentation for Strings, List and range.
 
 def nine(inputString, char):
-	return -1
+	res = 0
+	word = inputString.strip()
+	character = char
+	for i in range(0, len(word)):
+		if word[i] == character:
+			res = i + 1
+			break
+	if res == 0:
+		return -1
+	else:
+		return res
 
 	# <QUESTION 10>
 
